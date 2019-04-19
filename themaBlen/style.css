@@ -1,0 +1,40 @@
+/*
+Thema Name: Thema van Blen
+Author: Blen Michil
+Author URI: http://24694.hosts2.ma-cloud.nl/bewijzenmap/periode%201.3/pro1/wpBlen/
+Versio 1.0
+
+*/
+body {
+  font-family: sans-serif;
+  background: #333;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+a{
+  color: dodgerblue;
+}
+
+.container {
+  padding: 2em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  background: dodgerblue;
+  color: #fff;
+}
+
+header a {
+  color: #fff;
+}
+
+footer {
+  background: dodgerblue;
+  color: #fff;
+}
