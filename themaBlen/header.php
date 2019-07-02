@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>">
+<html <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <title><?php bloginfo('name'); ?></title>
@@ -8,9 +8,17 @@
     <?php wp_head(); ?>
   </head>
 
+
+
   <body>
-  <header class="header">
+  <header class="header" style="background-image: url('<?php echo get_template_directory_uri() ?>/img/strand.jpg')">
     <div class="container">
+      <nav>
+        <?php $argumenten = array(
+          'theme_location' => 'hoofd' ,
+         ); ?>
+        <?php wp_nav_menu( $argumenten); ?>
+      </nav>
       <a href="<?php echo home_url(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
       <p><?php bloginfo('discription'); ?></p>
     </div>
